@@ -1,0 +1,58 @@
+body *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#185B34 ,#12121466);
+    height: 100vh;
+} 
+header{
+    padding: 25px;
+    text-align: center;
+   
+}
+.card{
+    width: 354px;
+    height: 508px;
+    margin: auto;
+    background-image: url(images/bg-ignite.svg);
+   
+}
+.avatar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #F7DD43 ;
+    
+}
+.avatar{
+    padding: 100px;
+}
+.info{
+    color: white;
+    margin-left: 70px;
+}
+.p{
+    margin-left: 32px;
+}
+.form{
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+
+}
+.input-box{
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: black;
+    color: white ;
+    margin: 8px;
+    padding: 8px;
+}

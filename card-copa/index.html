@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Card-Copa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><img src="images/logo.svg" alt=""></header>
+    <main>
+        <div class="form">
+            <form action="#" method="get">
+                
+                <div >
+                    <label for="nome"></label>
+                    <input class="input-box"  autocomplete="off"  placeholder="Digite seu nome" type="text" name="nome" id="">
+                    <label for="img"></label>
+                    <input class="input-box" type="file" name="img" id="">
+
+
+
+
+                    <input type="radio" id="explorer"
+                     name="contact" value="email" checked>
+                    <label for="explorer">Explorer</label>
+              
+                    <input type="radio" id="ignite"
+                     name="contact" value="phone">
+                    <label for="ignite">Ignite</label>
+                  </div>
+
+
+                  <button class="input-box" type="submit">Criar figurinha!</button>
+
+
+
+            </form>
+        </div>
+        <div id="card" class="card" ondblclick="changeCard(event)">
+            <div class="avatar" >
+                <img src="https://avatars.githubusercontent.com/u/111208864?v=4" alt="">
+            </div>
+            <div class="info">
+                <h1>Ana Clara</h1>
+                <p class="p">Estudante front-end</p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
