@@ -14,28 +14,26 @@
     <header><img src="images/logo.svg" alt=""></header>
     <main>
         <div class="form">
-            <form action="#" method="get">
+            <form id="form" action="#" method="get">
                 
                 <div >
                     <label for="nome"></label>
-                    <input class="input-box"  autocomplete="off"  placeholder="Digite seu nome" type="text" name="nome" id="">
+                    <input class="input-box"  autocomplete="off"  placeholder="Digite seu nome" type="text" name="nome" id="nome">
                     <label for="img"></label>
-                    <input class="input-box" type="file" name="img" id="">
+                    <input class="input-box" type="file" name="img" id="file">
 
 
 
 
-                    <input type="radio" id="explorer"
-                     name="contact" value="email" checked>
+                    <input class="trilha" type="radio" id="explorer" name="contact">
                     <label for="explorer">Explorer</label>
               
-                    <input type="radio" id="ignite"
-                     name="contact" value="phone">
+                    <input class="trilha" type="radio" id="ignite" name="contact" >
                     <label for="ignite">Ignite</label>
                   </div>
 
 
-                  <button class="input-box" type="submit">Criar figurinha!</button>
+                  <button id="btn" class="input-box">Criar figurinha!</button>
 
 
 
@@ -43,10 +41,10 @@
         </div>
         <div id="card" class="card" ondblclick="changeCard(event)">
             <div class="avatar" >
-                <img src="https://avatars.githubusercontent.com/u/111208864?v=4" alt="">
+                <img id="img" src="https://avatars.githubusercontent.com/u/111208864?v=4" alt="">
             </div>
             <div class="info">
-                <h1>Ana Clara</h1>
+                <h1 id="nome-tela">Ana Clara</h1>
                 <p class="p">Estudante front-end</p>
             </div>
         </div>

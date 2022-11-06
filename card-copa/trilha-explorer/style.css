@@ -7,16 +7,21 @@
 body{
      background-color: rgb(0, 52, 0);
 }
+.container{
+    margin: 52px auto;
+}
 header{
     text-align: center;
     color: white;
-    padding: 40px;
+    margin-bottom: 63px;
 }
 .card{
     background-color: rgb(40, 40, 40); 
     padding: 30px;
-    width: 380px;
-    margin: auto;
+    width: 368px;
+    margin: 32px auto;
+    border-bottom: 4px solid yellow;
+    
 }
 .data{
     width: 150px;
@@ -53,4 +58,50 @@ li strong{
     width: 40px;
     margin-left: 40px;
     margin-right: 40px;
+}
+li img:hover{
+    transform: scale(1.2);
+
+}
+li img{
+    transition: transform 0.3s;
+}
+@keyframes appear{
+    0%{ 
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+.cards{
+    animation: appear .7s ;
+}
+
+
+
+@media (min-width:767px){
+body{
+    background-color: rgb(7, 7, 63);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.card{
+ border-bottom: 4px solid blue;
+}
+.data {
+    border: 1px solid  blue;
+    color: blue;
+}
+data span{
+    color: blue;
+}
+#dia{
+    color: blue;
 }
